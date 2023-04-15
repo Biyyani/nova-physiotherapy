@@ -56,6 +56,26 @@ Author:             Jitu Chauhan
 
 ------------------------------------------------------------------*/
 
+/* BreadCrumb */
+
+.breadcrumb{
+  padding:8px 15px;
+  margin-bottom:20px;
+  list-style:none;
+  background-color:#f5f5f5;
+  border-radius:4px
+}
+.breadcrumb>li{
+  display:inline-block
+}
+.breadcrumb>li+li:before{
+  padding:0 5px !important;
+  color:#ccc !important;
+  content:"/\00a0" !important;
+}
+.breadcrumb>.active{
+  color:#777
+}
 /*-----------------------------------
     1. Body / Typography 
 -----------------------------------*/
@@ -226,7 +246,7 @@ label { }
 4.4 Background & Block color 
 ----------------------------------*/
 .bg-light { background-color: #f6f3ec; }
-.bg-primary { background-color: #0eb769; }
+.bg-primary { background-color: #0eb769 !important; }
 .bg-default { background-color: #effef7; }
 .bg-white { background-color: #fff; }
 .outline { border: 1px solid #e5e7ec; }
@@ -434,7 +454,7 @@ box-shadow: 0px 2px 6px 0px rgba(230,230,230,1);}
 /*-----------------------------------
 8. Footer 
 -------------------------------------*/
-.footer { background-color: #262928; padding-top: 100px; padding-bottom: 100px; }
+.footer { background-color: #262928; padding-top: 40px; padding-bottom: 100px; }
 .footer-widget p { color: #676f6c; }
 .footer-widget .widget-title { color: #fff; font-weight: 600; letter-spacing: -1px; border-bottom: 1px solid #424544; padding-bottom: 20px; margin-bottom: 30px; }
 .footer-widget { }
@@ -449,12 +469,12 @@ box-shadow: 0px 2px 6px 0px rgba(230,230,230,1);}
 .footer-social ul li a i { padding-right: 10px; width: 30px; }
 .footer-social ul li a:hover i { color: #0eb769; }
 .footer .contact li { position: relative; padding-left: 40px; display: block; margin-bottom: 15px; padding: 0 0 15px 40px; color: #666e6b; }
-.footer .contact li i { display: block; position: absolute; top: 0; left: 0; width: 30px; font-size: 16px; text-align: center; }
+.footer .contact li i { display: block; position: absolute; top: 6px; left: 5px; width: 30px; font-size: 16px; text-align: center; margin-top: 2px; }
 .widget-newsletter .form-control { height: 48px; color: #eee; background-color: #1c1e1d; border: none; box-shadow: none; font-size: 14px; }
 .widget-newsletter button { height: 48px; }
 
 /*-------------- tiny footer ------------*/
-.tiny-footer { background-color: #262928; padding-top: 9px; padding-bottom: 9px; font-size: 12px; color: #56575e; text-align: left; text-transform: uppercase; text-align: center; }
+.tiny-footer { background-color: #262928; padding-top: 9px; padding-bottom: 9px; font-size: 9px; color: #56575e; text-align: left; text-transform: uppercase; text-align: center; }
 .copyright-content { border-top: 1px solid #424544; padding: 12px; color: #676f6c; }
 
 /*-----------------------------------
@@ -753,6 +773,7 @@ ul.widget-recent-post { }
 .team-title { margin-bottom: 0px; }
 .team-name { }
 .team-meta { text-transform: uppercase; font-size: 12px; color: #0eb769; font-weight: 500; letter-spacing: 1px; }
+.team-description { font-size: 12px; color: black; letter-spacing: 0.3px; }
 .team-designation { }
 
 /*----- Comment Post -----*/
