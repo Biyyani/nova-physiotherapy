@@ -11,20 +11,26 @@
     <title>Nova Physiotherapy</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap5.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <!-- <link href="vendor/aos/aos.css" rel="stylesheet"> -->
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   
 </head>
-
 <body>
     <div class="header-top">
         <!-- header-top-->
@@ -48,19 +54,20 @@
             </div>
         </div>
     </div>
+    
     <div class="header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
                     <a href="https://novaphysio.in/"><img src="images/main-images/nova-logo.svg" alt=""><!--p>Nova physiotherapy</p--></a>
                 </div>
-                <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                      <div class="navigation">
                         <div id="navigation">
                             <ul>
-                                <li class="active"><a href="index.html" title="Home">Home</a></li>
+                                <li class="active"><a href="https://novaphysio.in/" title="Home">Home</a></li>
                                
-                                <li><a href="https://novaphysio.in#services" title="Services">Services</a></li>
+                                <li><a href="#services" title="Services">Services</a></li>
                                 <!--li class="has-sub"><a href="service-list.html" title="Service List">Service List</a>
                                     <ul>
                                         <li><a href="service-list.html" title="Service List">Service List</a></li>
@@ -89,7 +96,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="page-caption">
-                        <h2 class="page-title">Contact us</h2>
+                        <h2 class="page-title"></h2>
                     </div>
                 </div>
             </div>
@@ -99,8 +106,8 @@
         <div class="container">
             <div class="col-lg-12">
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">Contact us</li>
+                    <li><a href="https://novaphysio.in/">Home</a></li>
+                    <li class="active">Blogs</li>
                 </ol>
             </div>
         </div>
@@ -108,74 +115,102 @@
     <div class="content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="widget widget-contact">
-                        <!-- widget search -->
-                        <h3 class="widget-title">Contact Info</h3>
-                        <address>
-                          <strong>Flower.</strong><br>
-                          Beside Thirumala Theatre, Khammam, 507002<br>
-                          <abbr title="Phone">Ph No:</abbr> +91 8179670707
-                        </address>
-                        <address>
-                          <strong>Contact Name</strong><br>
-                          <a href="mailto:#">hello@novaphysio.in</a>
-                        </address>
-                         
-                    </div>
-                    <!-- /.widget search -->
-                    <div class="widget widget-social">
-
-                        <div class="social-circle">
-                            <a href="https://facebook.com/novaphysioterephyclinics"> <i class="fa fa-facebook"></i></a>
-                            <a href="https://twitter.com/novaphysio07"><i class="fa fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/novaphysiotherapyclinic/"><i class="fa fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/nova-physiotherapy-7497ab272/"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                       
-                    </div>
-                </div>
                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h1>Contact Form</h1>
-                        <p> Please complete the form below. We'll do everything we can to respond to you as quickly as possible.</p>
-                        <form action="https://formspree.io/f/xjvdpjdo", method="POST">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label class="control-label" for="name">name</label>
-                                    <input type="text" name="name" id="name" placeholder="" class="form-control">
+                            <div class="post-holder">
+                                <!-- post holder -->
+                                <div class="post-img"><img src="images/main-images/blogs/physiotherapy-means.svg" style="width: 100%;" alt="What is Physiotherapy and why do you need it?" class="img-responsive">
                                 </div>
-                                <div class="col-md-6">
-                                    <label class="control-label" for="phone">phone</label>
-                                    <input type="text" name="phone" id="phone" placeholder="" class="form-control">
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="control-label" for="email">email</label>
-                                    <input type="text" name="email" id="email" placeholder="" class="form-control">
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="control-label" for="Subject">Subject</label>
-                                    <input type="text" name="Subject" id="Subject" placeholder="" class="form-control">
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="form-group">
-                                            <label class="control-label" for="textarea">Message</label>
-                                            <textarea class="form-control" id="textarea" name="textarea" rows="6" placeholder=""></textarea>
+                                <div class="post-content">
+                                    <!-- post content -->
+                                    <div class="post-header">
+                                        <h1>What is Physiotherapy and why do you need it?</h1>
+                                        <div class="meta">
+                                            <!-- post meta -->
+                                            <!-- <span class="meta-date">Dec 24, 2020 </span>
+                                            <span class="meta-comment"> <a href="#" class="meta-link">05 Comment </a></span>
+                                            <span class="meta-user">by <a href="#"> Admin </a></span>
+                                            <span class="meta-cat"> Category name </span> -->
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <button id="singlebutton" type="submit" name="singlebutton" class="btn btn-default">send message</button>
-                                            
-                                        </div>
-                                    </div>
-
+                                    <p class="text-justify">Physiotherapy, also known as physical therapy, is a healthcare profession that involves the use of physical methods such as exercise, manual therapy, and electrotherapy to improve the function and mobility of the body. 
+                                        Physiotherapy is often used to treat a wide range of conditions, such as musculoskeletal disorders, neurological conditions, cardiopulmonary disorders, and sports injuries. Physiotherapy is effective because it focuses on 
+                                        addressing the root cause of the problem rather than just managing symptoms. Physiotherapists use a range of techniques and exercises to help patients achieve their physical goals, such as reducing pain, improving range of motion, and enhancing strength and flexibility.                                        
+                                        One of the key benefits of physiotherapy is that it is a non-invasive, drug-free approach to healthcare. Unlike medication or surgery, physiotherapy does not come with the risk of side effects or complications, 
+                                        making it a safe and effective treatment option for a wide range of conditions.Physiotherapy is also effective in preventing future injuries and promoting overall health and well-being. Physiotherapists work with 
+                                        patients to develop personalized exercise programs that help improve strength, balance, and flexibility, reducing the risk of future injuries and improving overall physical function. Another benefit of physiotherapy is its ability 
+                                        to improve quality of life. Patients who receive physiotherapy often experience a significant reduction in pain and an improvement in their ability to perform daily activities, leading to an overall improvement in quality of life. 
+                                        In conclusion, physiotherapy is a highly effective healthcare profession that can help individuals of all ages and abilities achieve their physical goals. By focusing on the root cause of the problem and using a range of physical methods, physiotherapists can help patients reduce pain, improve mobility, prevent future injuries, and promote overall health and well-being. If you are dealing with a condition that affects your physical function, consider seeing a physiotherapist and taking the first step towards a healthier, more active life.</p>
+                                    <!-- /. post navigation -->
+                                </div>
                             </div>
-                        </form>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="widget widget-tags"><!-- widget categories -->
+                        <!-- widget start -->
+                        <h2 class="widget-title"> Tags </h2>
+                        <!-- <ul class="listnone"> -->
+                            <a href="#">Back Pain</a>
+                            <a href="#">Knee Pain</a>
+                            <a href="#">Shoulder Pain</a>
+                            <a href="#">Manual Therapy</a>
+                            <a href="#">Acupuncture</a>
+                        <!-- </ul> -->
+                    </div><!-- /.widget categories -->
+                    <!-- widget start -->
+                    <div class="widget widget-recent-post"><!-- widget recent post -->
+                        <h2 class="widget-title"> Recent Post </h2>
+                        <ul class="listnone widget-recent-post">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="recent-post-img">
+                                            <a href="back-pain.html"><img src="images/main-images/blogs/recent-blogs/back-pain.svg" alt="How Physiotherapy helps in Back Pain"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="recent-post-content">
+                                            <h4><a href="back-pain.html" class="title">How Physiotherapy helps in Back Pain</a></h4>
+                                            <!-- <div class="meta"><span class="meta-date">22 Jan, 2020</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="recent-post-img">
+                                            <a href="shoulder-pain.html"><img src="images/main-images/blogs/recent-blogs/shoulder-pain.svg" alt="How Physiotherapy helps in Shoulder Pain"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="recent-post-content">
+                                            <h4><a href="shoulder-pain.html" class="title">How Physiotherapy helps in Shoulder Pain</a></h4>
+                                            <!-- <div class="meta"><span class="meta-date">22 Jan, 2020</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="recent-post-img">
+                                            <a href="elbow-pain.html"><img src="images/main-images/blogs/recent-blogs/knee-pain.svg" alt="How Physiotherapy helps in Elbow Pain"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="recent-post-content">
+                                            <h4><a href="elbow-pain.html" class="title">How Physiotherapy helps in Elbow Pain</a></h4>
+                                            <!-- <div class="meta"><span class="meta-date">22 Jan, 2020</span> -->
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- /.widget recent post -->
                 </div>
             </div>
         </div>
@@ -186,7 +221,7 @@
             <div class="row">
                 <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12" style="margin-top:auto;">
                     <h1 class="cta-title">Book your online appointment</h1>
-                    <!-- <p class="cta-text"> Call to action button example for booking appointment for patients.</p> -->
+                    <!--p class="cta-text"> Call to action button example for booking appointment for patients.</p-->
                 </div>
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <a href="tel: +91 8179670707" class="btn btn-white btn-lg mt20">Call to +91 8179670707</a>
@@ -194,6 +229,7 @@
             </div>
         </div>
     </div>
+    <!-- /.call to action -->
     <div class="footer">
         <div class="container">
             <div class="row mt-3">
@@ -230,7 +266,7 @@
                             <li><a href="https://facebook.com/novaphysioterephyclinics"> <i class="fa fa-facebook"></i> Facebook  </a></li>
                             <li><a href="https://twitter.com/novaphysio07"><i class="fa fa-twitter"></i> Twitter</a></li>
                             <li><a href="https://www.instagram.com/novaphysiotherapyclinic/"><i class="fa fa-instagram"></i> Instagram</a></li>
-                            <li><a href="https://www.linkedin.com/in/nova-physiotherapy-7497ab272/"><i class="fa fa-linkedin"></i> Linked In</a></li>                        
+                            <li><a href="https://www.linkedin.com/in/nova-physiotherapy-7497ab272/"><i class="fa fa-linkedin"></i> Linked In</a></li>                           
                         </ul>
                     </div>
                 </div>
@@ -238,11 +274,10 @@
                     <div class="footer-widget footer-social">
                         <h2 class="widget-title">Clinic Address</h2>
                         <ul class="listnone contact">
-                            <li><i class="fa fa-map-marker"></i> Beside Thirumala Theatre, Khammam
-                            </li>
-                            <li><i class="fa fa-phone"></i> +91 8179670707 </li>
+                            <li><i class="fa fa-map-marker"></i> Beside Thirumala Theatre, Khammam</li>
+                            <li><i class="fa fa-phone"></i><a href="tel: +91 8179670707">+91 8179670707 </a></li>
                             <!-- <li><i class="fa fa-fax"></i> +00 (123) 456 7890</li> -->
-                            <li><i class="fa fa-envelope-o"></i> hello@novaphysio.in</li>
+                            <li><i class="fa fa-envelope-o"></i><a href="mailto: hello@novaphysio.in">hello@novaphysio.in</a></li>
                         </ul>
                     </div>
                 </div>
